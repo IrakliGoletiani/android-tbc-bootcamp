@@ -1,28 +1,27 @@
-package homework.oop_irakli
+package homework
 
 
-                 /** 1 */
+/** 1 */
+
 fun task1(numberArray: Array<Int>): Int{
-
     val newSet = numberArray.toSet()
 
     return newSet.size
-
-
 }
-                  /** 2 */
+
+/** 2 */
 
 fun task2(list1: List<Int>,list2: List<Int>): Set<Int> {
     return list1.intersect(list2)
 }
 
-                 /** 3 */
+/** 3 */
 
 fun task3(list1: List<Int>,list2: List<Int>): Set<Int> {
     return list1.union(list2)
 }
 
-     /** 4 */
+/** 4 */
 
 fun task4(list: List<Int>): List<Int>{
     val average = list.average()
@@ -38,7 +37,7 @@ fun task4(list: List<Int>): List<Int>{
     return newList
 }
 
-        /** 5 */
+/** 5 */
 
 fun task5(list: List<Int>) {
     val uniqueList = list.toSortedSet().toList()
@@ -46,11 +45,4 @@ fun task5(list: List<Int>) {
     println("მეორე მინიმალური: ${uniqueList[1]}")
 
     println("მეორე მაქსიმალური: ${uniqueList[uniqueList.size - 2]}")
-}
-
-
-
-
-fun main(){
-    println()
 }
