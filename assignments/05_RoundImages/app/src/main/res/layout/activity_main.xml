@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circle" />
+
+    <ImageView
+        android:id="@+id/ivAndroid"
+        android:layout_width="96dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_android" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivCandle"
+        app:layout_constraintStart_toStartOf="@+id/ivCandle"
+        app:layout_constraintTop_toBottomOf="@id/ivCandle" />
+
+    <ImageView
+        android:id="@+id/ivCandle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="290"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_kotlin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivPhone"
+        app:layout_constraintStart_toStartOf="@+id/ivPhone"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhone" />
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="335"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivCandy"
+        app:layout_constraintStart_toStartOf="@+id/ivCandy"
+        app:layout_constraintTop_toBottomOf="@+id/ivCandy" />
+
+    <ImageView
+        android:id="@+id/ivCandy"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="20"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_candy"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivTv"
+        app:layout_constraintStart_toStartOf="@+id/ivTv"
+        app:layout_constraintTop_toBottomOf="@+id/ivTv" />
+
+    <ImageView
+        android:id="@+id/ivTv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="65"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_tv"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivCar"
+        app:layout_constraintStart_toStartOf="@+id/ivCar"
+        app:layout_constraintTop_toBottomOf="@+id/ivCar" />
+
+    <ImageView
+        android:id="@+id/ivCar"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="110"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_ferrari"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivBicycle"
+        app:layout_constraintStart_toStartOf="@+id/ivBicycle"
+        app:layout_constraintTop_toBottomOf="@+id/ivBicycle" />
+
+    <ImageView
+        android:id="@+id/ivBicycle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="155"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_bicycle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivPumpkin"
+        app:layout_constraintStart_toStartOf="@+id/ivPumpkin"
+        app:layout_constraintTop_toBottomOf="@+id/ivPumpkin" />
+
+    <ImageView
+        android:id="@+id/ivPumpkin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="200"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_pumpkin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/h"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivHome"
+        app:layout_constraintStart_toStartOf="@+id/ivHome"
+        app:layout_constraintTop_toBottomOf="@+id/ivHome" />
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/ivAndroid"
+        app:layout_constraintCircleAngle="245"
+        app:layout_constraintCircleRadius="135dp"
+        app:srcCompat="@drawable/ic_home"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
